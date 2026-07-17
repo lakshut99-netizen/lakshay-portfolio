@@ -1,37 +1,54 @@
-export default function Contact(){
+export default function Home() {
 
-return (
+  const projects = [
+    {
+      title: "AI Brand Identity Design",
+      category: "Logo & Branding",
+      image: "/projects/branding.png"
+    },
+    {
+      title: "Social Media Campaign",
+      category: "Instagram Post Design",
+      image: "/projects/post social media.jpg"
+    },
+    {
+      title: "Poster Advertisement",
+      category: "Creative Poster Design",
+      image: "/projects/poster.jpg"
+    }
+  ];
 
-<main className="min-h-screen bg-[#07070a] text-white flex items-center justify-center px-6">
+  const skills = [
+    "Brand Identity",
+    "Logo Design",
+    "Social Media Design",
+    "UI/UX Design",
+    "Packaging Design",
+    "Motion Graphics"
+  ];
 
-<div className="text-center">
+  const services = [
+    {
+      title:"Branding",
+      desc:"Complete visual identity, logos and brand guidelines."
+    },
+    {
+      title:"Social Media",
+      desc:"Premium Instagram posts and marketing creatives."
+    },
+    {
+      title:"UI/UX Design",
+      desc:"Modern interfaces and digital experiences."
+    }
+  ];
 
-<h1 className="text-5xl font-bold">
-Let's Create Something Amazing
-</h1>
+  return (
+    <main className="bg-[#07070a] text-white min-h-screen">
 
-<p className="text-gray-400 mt-5 text-lg">
-Available for branding, logo design and creative projects.
-</p>
+      <h1 className="text-6xl text-center pt-40">
+        Lakshay Thakur
+      </h1>
 
-<div className="mt-8 text-lg">
-
-<p>Email: lakshut99@gmail.com</p>
-
-<p className="mt-3">
-Instagram: Lakshu7305
-</p>
-
-</div>
-
-<button className="mt-8 px-8 py-3 rounded-full bg-white text-black">
-Contact Me
-</button>
-
-</div>
-
-</main>
-
-)
-
+    </main>
+  );
 }
